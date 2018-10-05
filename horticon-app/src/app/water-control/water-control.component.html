@@ -1,0 +1,34 @@
+<form class="planting-form">
+  <mat-form-field class="planting-full-width">
+    <input matInput placeholder="Sistema">
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width ">
+    <input matInput placeholder="Lote">
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width">
+    <input matInput [matDatepicker]="pickerData" placeholder="Data">
+    <mat-datepicker-toggle matSuffix [for]="pickerData"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #pickerData></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width">
+    <input matInput [matDatepicker]="pickerHora" placeholder="Data">
+    <mat-datepicker-toggle matSuffix [for]="pickerHora"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #pickerHora></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width ">
+    <input matInput placeholder="CDE">
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width ">
+    <input matInput placeholder="PH">
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width ">
+    <input matInput placeholder="Cº">
+  </mat-form-field>
+
+</form>

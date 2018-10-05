@@ -1,0 +1,45 @@
+<form class="planting-form">
+  <mat-form-field class="planting-full-width">
+    <input matInput placeholder="Sistema">
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width ">
+    <input matInput placeholder="Lote">
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width">
+    <input matInput [matDatepicker]="picker" placeholder="Semeado">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width">
+    <input matInput [matDatepicker]="picker" placeholder="Banca">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width">
+    <input matInput [matDatepicker]="picker" placeholder="50mm">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width">
+    <input matInput [matDatepicker]="picker" placeholder="75mm">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width">
+    <input matInput [matDatepicker]="picker" placeholder="Colhido ">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="planting-full-width ">
+    <input matInput placeholder="Entregue">
+  </mat-form-field>
+
+</form>
+
