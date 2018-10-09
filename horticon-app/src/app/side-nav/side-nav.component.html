@@ -1,32 +1,28 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav
-    #drawer
-    class="sidenav"
-    fixedInViewport="true"
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="!(isHandset$ | async)">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" 
+    
+    [mode]="over"
+    [opened]="false">
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item [routerLink]="['/planting']">Plantio</a>
-      <a mat-list-item [routerLink]="['/water-control']">Controle de Águas</a>
-      <a mat-list-item [routerLink]="['/cycle']">Ciclos</a>
-      <a mat-list-item [routerLink]="['/whasing-pipe']">Lavagem de Canos</a>
-      <a mat-list-item [routerLink]="['/pesticide']">Defensivos</a>
-      <a mat-list-item [routerLink]="['/sale']">Vendas</a>
+      <a mat-list-item [routerLink]="['/planting']" (click)="drawer.toggle()">Plantio</a>
+      <a mat-list-item [routerLink]="['/water-control']" (click)="drawer.toggle()">Controle de Águas</a>
+      <a mat-list-item [routerLink]="['/cycle']" (click)="drawer.toggle()">Ciclos</a>
+      <a mat-list-item [routerLink]="['/whasing-pipe']" (click)="drawer.toggle()">Lavagem de Canos</a>
+      <a mat-list-item [routerLink]="['/pesticide']" (click)="drawer.toggle()">Defensivos</a>
+      <a mat-list-item [routerLink]="['/sale']" (click)="drawer.toggle()">Vendas</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>horticon-app</span>
+      <span class="toolbar-filler">{{title}}</span>
+      <span class="toolbar-filler"></span>
+      <button type="submit" aria-label="Done" mat-icon-button>
+        <mat-icon aria-label="Done">done</mat-icon>
+      </button>
     </mat-toolbar>
     <!-- Add Content Here -->
   </mat-sidenav-content>
