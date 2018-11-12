@@ -7,12 +7,14 @@ import { CycleComponent } from './cycle/cycle.component';
 import { PesticideComponent } from './pesticide/pesticide.component';
 import { WaterControlComponent } from './water-control/water-control.component';
 import { WashingPipeComponent } from './washing-pipe/washing-pipe.component';
+import { PesticideListComponent } from "./pesticide/pesticide-list/pesticide-list.component";
 
 const routes: Routes = [
  
   { path: 'planting', component: PlantingComponent },
   { path: 'cycle', component: CycleComponent },
   { path: 'pesticide', component: PesticideComponent },
+  { path: 'pesticide-list', component: PesticideListComponent },
   { path: 'water-control', component: WaterControlComponent },
   { path: 'washing-pipe', component: WashingPipeComponent }
   //{ path: '', redirectTo: '/about', pathMatch: 'full' },
