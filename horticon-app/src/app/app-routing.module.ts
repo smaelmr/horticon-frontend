@@ -13,7 +13,7 @@ const routes: Routes = [
  
   { path: 'planting', component: PlantingComponent },
   { path: 'cycle', component: CycleComponent },
-  { path: 'pesticide', component: PesticideComponent },
+  { path: 'pesticide/:id', component: PesticideComponent },
   { path: 'pesticide-list', component: PesticideListComponent },
   { path: 'water-control', component: WaterControlComponent },
   { path: 'washing-pipe', component: WashingPipeComponent }

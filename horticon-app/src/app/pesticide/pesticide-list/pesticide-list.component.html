@@ -2,8 +2,8 @@
   <mat-list>    
 
     <mat-nav-list>
-      <mat-list-item>
-         <a matLine href="..."> teste</a>
+      <mat-list-item *ngFor="let pesticide of pesticides">
+         <a matLine [routerLink]="['/pesticide', pesticide.id]">> {{pesticide.commercialName}} </a>
       </mat-list-item>
     </mat-nav-list>
 
