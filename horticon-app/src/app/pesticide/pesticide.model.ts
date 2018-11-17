@@ -1,4 +1,5 @@
 export interface Pesticide {
+        id : string
         system : number
         lot : number
         date : string

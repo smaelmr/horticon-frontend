@@ -17,12 +17,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { PlantingComponent } from './planting/planting.component';
 import { CycleComponent } from './cycle/cycle.component';
-import { PesticideComponent } from './pesticide/pesticide.component';
 import { WaterControlComponent } from './water-control/water-control.component';
 import { WashingPipeComponent } from './washing-pipe/washing-pipe.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { PesticideListComponent } from "./pesticide/pesticide-list/pesticide-list.component";
+import { PesticideEditComponent } from './pesticide/pesticide-edit/pesticide-edit.component';
+import { PesticideAddComponent } from './pesticide/pesticide-add/pesticide-add.component';
 import { PesticideService } from './pesticide/pesticide.service';
 
 @NgModule({
@@ -31,11 +32,12 @@ import { PesticideService } from './pesticide/pesticide.service';
     SideNavComponent,
     PlantingComponent,
     CycleComponent,
-    PesticideComponent,
     WaterControlComponent,
     WashingPipeComponent,
     LoginComponent,
-    PesticideListComponent
+    PesticideListComponent,
+    PesticideEditComponent,
+    PesticideAddComponent
   ],
   imports: [
     BrowserModule,

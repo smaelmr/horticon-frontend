@@ -22,6 +22,28 @@ export class PesticideService {
         return this.http.get(`${HORTICON_API}/pesticide`).pipe(
           map(response => response.json()),
           catchError(ErrorHandler.handleError))
-        
+    }
+
+    pesticideById(id: string): Observable<Pesticide>{
+    return this.http.get(`${HORTICON_API}/pesticide/${id}`).pipe(
+        map(response => response.json()),
+        catchError(ErrorHandler.handleError))
+    }
+
+    pesticideCreate(pesticide: Pesticide) {
+        return this.http.post(`${HORTICON_API}/pesticide`, pesticide);
       }
+
+    pesticideUpdate(pesticide: Pesticide) {
+        return this.http.post(`${HORTICON_API}/pesticide` + '/' + pesticide.id, pesticide);
+    }
+
+    pesticideDelete(id: string) {
+        return this.http.delete(`${HORTICON_API}/pesticide` + '/' + id);
+    }
+    
+    
+    
+   
+
 }

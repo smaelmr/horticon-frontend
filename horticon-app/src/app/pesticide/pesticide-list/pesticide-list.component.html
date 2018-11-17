@@ -3,10 +3,25 @@
 
     <mat-nav-list>
       <mat-list-item *ngFor="let pesticide of pesticides">
-         <a matLine [routerLink]="['/pesticide', pesticide.id]">> {{pesticide.commercialName}} </a>
+            
+        <a 
+          matLine 
+          [routerLink]="['/pesticide-edit', pesticide.id]"> Lote: {{pesticide.lot}} | {{pesticide.commercialName}} 
+        </a>
+
       </mat-list-item>
     </mat-nav-list>
+    
+      <button 
+        mat-mini-fab color="primary" 
+        class="fab-add" 
+        matTooltip="Adicionar Registro" 
+        matTooltipShowDelay="1000" 
+        [routerLink]="['/pesticide-add']">
+        <mat-icon>add</mat-icon>
+      </button>
 
+    
     
   </mat-list>
 

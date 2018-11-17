@@ -1,0 +1,7 @@
+.fab-add {
+    background-color: #117BB2;
+    z-index: 2;
+    position: fixed;
+    bottom: 10px;
+    left: 320px;
+}
