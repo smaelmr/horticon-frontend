@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  api: 'https://localhost:44378'
+  api: 'https://api.horticon.com.br/api'
 };

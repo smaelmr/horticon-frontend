@@ -22,6 +22,7 @@ export class PesticideService {
         return this.http.get(`${HORTICON_API}/pesticide`).pipe(
           map(response => response.json()),
           catchError(ErrorHandler.handleError))
+          
     }
 
     pesticideById(id: string): Observable<Pesticide>{
